@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: $color-primario;
+
+
+        .container-fluid {
+            display: flex;
+            flex-direction: row;
+
+            a {
+                h1 {
+                    display: none;
+                }
+
+                img {
+                    width: auto;
+                    height: 50px;
+                }
+            }
+
+
+            .collapse {
+                display: flex;
+                justify-content: right;
+
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: $color-secundario;
+                            transition: all 0.5s ease;
+
+
+                            &:hover {
+                                background-color: $color-secundario;
+                                color: $color-primario;
+                                border-radius: 25px;
+                                padding: 5px 10px;
+                                margin: 0px 20px 0px 20px;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------ HEADER NIKKEI ------*/
+.header-nikkei {
+    .navbar {
+        background-color: $color-primario-nikkei;
+
+        .container-fluid {
+            img {
+                width: auto;
+                height: 50px;
+            }
+
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link-nikkei {
+                            color: $color-secundario;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                background-color: $color-secundario;
+                                color: $color-primario-nikkei;
+                                border-radius: 25px;
+                                padding: 5px 10px;
+                                margin: 0px 20px 0px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

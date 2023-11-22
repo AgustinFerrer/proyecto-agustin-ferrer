@@ -180,9 +180,10 @@
 }
 
 @media screen and (max-width: 500px) {
-    .paisaje{
+    .paisaje {
         height: calc(100vh - 66px);
     }
+
     .galeria {
         .carousel {
             height: 250px;
@@ -255,33 +256,9 @@
         }
     }
 
-    header {
-        nav {
-            div {
-                a {
-                    img {
-                        width: auto;
-                        height: 40px;
-                    }
-                }
-            }
-        }
-    }
-
-    .header-nikkei {
-        nav {
-            div {
-                img {
-                    width: auto;
-                    height: 40px;
-
-                }
-            }
-        }
-    }
-
     .terraza-de-noche {
         height: calc(100vh - 66px);
+
         h1 {
             color: $color-secundario;
             font-size: 40px;
@@ -300,38 +277,78 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
     header {
-        nav {
-            div {
+
+
+
+
+        .navbar {
+
+
+
+            .container-fluid {
                 a {
+
+
                     img {
-                        width: auto;
-                        height: 30px;
+                        display: none;
+                    }
+
+                    .logo-movile {
+                        display: block;
                     }
                 }
             }
         }
     }
 
-    .header-nikkei {
-        nav {
-            div {
-                img {
-                    width: auto;
-                    height: 30px;
 
+    .header-nikkei {
+        .navbar {
+            background-color: $color-primario-nikkei;
+
+            .container-fluid {
+                .div-nikkei {
+                    display: flex;
+                    flex-direction: row;
+                    a {
+
+
+                        img {
+                            display: none;
+                        }
+    
+                        .logo-movile {
+                            display: block;
+                        }
+                    }
+
+                    img {
+                        display: none;
+
+                    }
+
+                    .logo-movile-nikkei {
+                        display: block;
+                    }
                 }
             }
         }
     }
-    .terraza-de-noche{
+}
+
+@media screen and (max-width: 390px) {
+
+    .terraza-de-noche {
         height: calc(100vh - 57.83px);
     }
-    .paisaje{
+
+    .paisaje {
         height: calc(100vh - 57.83px);
     }
 }
+
 @media screen and (max-width: 370px) {
     .section-contacto {
         h1 {

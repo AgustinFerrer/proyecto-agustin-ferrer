@@ -34,18 +34,22 @@ header {
       header .navbar .container-fluid a img {
         width: auto;
         height: 50px; }
+      header .navbar .container-fluid a .logo-movile {
+        display: none; }
       header .navbar .container-fluid .collapse {
-        display: flex;
         justify-content: right; }
-        header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-          color: white;
-          transition: all 0.5s ease; }
-          header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
-            background-color: white;
-            color: #266dd6;
-            border-radius: 25px;
-            padding: 5px 10px;
-            margin: 0px 20px 0px 20px; }
+        header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+          text-align: center; }
+          header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+            text-align: center;
+            color: white;
+            transition: all 0.5s ease; }
+            header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+              background-color: white;
+              color: #266dd6;
+              border-radius: 25px;
+              padding: 5px 10px;
+              margin: 0px 20px 0px 20px; }
 
 /*------ HEADER NIKKEI ------*/
 .header-nikkei .navbar {
@@ -53,6 +57,8 @@ header {
   .header-nikkei .navbar .container-fluid img {
     width: auto;
     height: 50px; }
+  .header-nikkei .navbar .container-fluid .logo-movile-nikkei {
+    display: none; }
   .header-nikkei .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link-nikkei {
     color: white;
     transition: all 0.5s ease; }
@@ -494,12 +500,6 @@ footer {
     font-weight: 400; }
   footer h2 {
     font-size: 18px; }
-  header nav div a img {
-    width: auto;
-    height: 40px; }
-  .header-nikkei nav div img {
-    width: auto;
-    height: 40px; }
   .terraza-de-noche {
     height: calc(100vh - 66px); }
     .terraza-de-noche h1 {
@@ -515,13 +515,26 @@ footer {
       font-weight: 400;
       text-shadow: 5px 0px 22px #000000; } }
 
+@media screen and (max-width: 410px) {
+  header .navbar .container-fluid a img {
+    display: none; }
+  header .navbar .container-fluid a .logo-movile {
+    display: block; }
+  .header-nikkei .navbar {
+    background-color: #fa986b; }
+    .header-nikkei .navbar .container-fluid .div-nikkei {
+      display: flex;
+      flex-direction: row; }
+      .header-nikkei .navbar .container-fluid .div-nikkei a img {
+        display: none; }
+      .header-nikkei .navbar .container-fluid .div-nikkei a .logo-movile {
+        display: block; }
+      .header-nikkei .navbar .container-fluid .div-nikkei img {
+        display: none; }
+      .header-nikkei .navbar .container-fluid .div-nikkei .logo-movile-nikkei {
+        display: block; } }
+
 @media screen and (max-width: 390px) {
-  header nav div a img {
-    width: auto;
-    height: 30px; }
-  .header-nikkei nav div img {
-    width: auto;
-    height: 30px; }
   .terraza-de-noche {
     height: calc(100vh - 57.83px); }
   .paisaje {

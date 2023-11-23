@@ -213,7 +213,8 @@ section .el-hotel {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 10px; }
   .info div h2 {
     font-size: 30px;
     font-weight: 600;
